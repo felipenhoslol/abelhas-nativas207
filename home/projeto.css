@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Comic Sans MS", "Comic Sans", cursive; /* pelo amor de deus muda isso dps */
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f7ffc7;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.header, nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    list-style-type: none;
+    margin-right: 90px;
+}
+   
+nav ul a {
+    margin-left: 100px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF9C7;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.instagram-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Ajusta o espaçamento entre a imagem e o texto */
+}
+
+footer h2 {
+    font-size: 30px;
+    margin: 0; /* Remove margens extras para melhor alinhamento */
+}
