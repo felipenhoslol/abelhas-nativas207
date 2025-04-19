@@ -7,13 +7,13 @@
 body{
     font-family: "Comic Sans MS", "Comic Sans", cursive; /* pelo amor de deus muda isso dps */
     font-size: 16px;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #F5F5F5;
+    color: #000000;
 }
 
 .header {
     overflow: hidden;
-    background-color: #f7ffc7;
+    background-color: #FFF9C7;
     width: 100%;
     padding-bottom: 50px;
     margin-bottom: 100px;
@@ -61,4 +61,103 @@ footer {
 footer h2 {
     font-size: 30px;
     margin: 0; /* Remove margens extras para melhor alinhamento */
+}
+
+.titulo-sobre {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto1 p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 20px;
+    max-width: 40%;
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto2 p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: right;
+    margin: 0 20px;
+    max-width: 40%;
+}
+
+.titulo2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto3 p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 20px;
+    max-width: 40%;
+}
+
+.texto4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+.texto4 p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 60%;
+}
+
+.titulo3 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.texto5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto5 p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 20px;
+    max-width: 40%;
+    margin-bottom: 50px;
 }

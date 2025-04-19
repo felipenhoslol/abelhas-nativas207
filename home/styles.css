@@ -5,10 +5,10 @@
 }
 
 body{
-    font-family: "Comic Sans MS", "Comic Sans", cursive; /* pelo amor de deus muda isso dps */
+    font-family: "Pangolin", "Comic Sans MS", cursive; /* pelo amor de deus muda isso dps */
     font-size: 16px;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #F5F5F5;
+    color: #000000;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h2 {
 
 .header {
     overflow: hidden;
-    background-color: #f7ffc7;
+    background-color: #FFF9C7;
     width: 100%;
     padding-bottom: 50px;
     margin-bottom: 100px;
