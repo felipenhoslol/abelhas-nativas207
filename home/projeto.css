@@ -55,10 +55,58 @@ footer {
 .instagram-logo {
     width: 50px;
     height: 50px;
-    margin-right: 10px; /* Ajusta o espaçamento entre a imagem e o texto */
+    margin-right: 10px;
 }
 
 footer h2 {
     font-size: 30px;
-    margin: 0; /* Remove margens extras para melhor alinhamento */
+    margin: 0;
+}
+
+/*até aqui ajustes do header e footer*/
+
+.abelhas_texto h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.abelhas_texto p{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.texto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.txtig {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bottomimgs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
