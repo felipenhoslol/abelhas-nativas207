@@ -13,7 +13,7 @@ body{
 
 .header {
     overflow: hidden;
-    background-color: #FFF9C7;
+    background-image: linear-gradient(#ffae00, #ff9500);
     width: 100%;
     padding-bottom: 50px;
     margin-bottom: 100px;
@@ -25,6 +25,7 @@ body{
     padding: 1rem;
     list-style-type: none;
     margin-right: 90px;
+    align-items: center;
 }
    
 nav ul a {
@@ -32,21 +33,25 @@ nav ul a {
     text-decoration: none;
     font-size: 17px;
     color: #000000;
-    margin-top: 70px;
     font-size: 20px;
+}
+
+nav ul a:hover {
+    color: #e9e9e9;
+    font-weight: bold;
 }
 
 .logo {
     width: 150px;
     height: 150px;
-    margin-right: 10px;
+    margin-left: 25px;
 }
 
 footer {
     display: flex;
     align-items: center; 
     justify-content: center;
-    background-color: #FFF9C7;
+    background-color: #ffa620;
     padding: 40px;
     text-align: center;
     width: 100%;
@@ -73,6 +78,11 @@ footer a {
     text-decoration: none;
     color: #000000;
     
+}
+
+footer a:hover {
+    color: #e9e9e9;
+    font-weight: bold;
 }
 
 /*até aqui ajustes do header e footer*/
@@ -103,21 +113,21 @@ footer a {
 }
 
 .imagem1 {
-    width: 80%;
+    width: 60%;
     height: auto;
     margin-right: 10px;
     border-radius: 10%;
 }
 
 .imagem2 {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-right: 10px;
     border-radius: 10%;
 }
 
 .imagem3 {
-    width: 100%;
+    width: 60%;
     height: auto;
     margin-right: 10px;
     border-radius: 10%;
@@ -131,6 +141,8 @@ footer a {
     margin-right: 5%;
     gap: 20px;
     font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .txtig {
