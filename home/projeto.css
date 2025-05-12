@@ -11,12 +11,52 @@ body{
     color: #000000;
 }
 
+/* Estilo do menu */
 .header {
-    overflow: hidden;
-    background-image: linear-gradient(#ffae00, #ff9500);
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos (logo e menu) */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 1rem;
+    background-color: #ffa620;
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #fff;
+}
+
+/* Estilo do menu hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto; /* Empurra o menu hambúrguer para a direita */
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
     width: 100%;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
+    background-color: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .header, nav ul {
@@ -43,7 +83,7 @@ nav ul a:hover {
 
 .logo {
     width: 150px;
-    height: 150px;
+    height: auto;
     margin-left: 25px;
 }
 
@@ -155,4 +195,95 @@ footer a:hover {
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .texto1, .texto2 {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 20px;
+    }
+
+    .imagem1, .imagem2, .imagem3 {
+        width: 100%; /* Faz as imagens ocuparem toda a largura disponível */
+        margin-right: 0; /* Remove o espaçamento lateral */
+        border-radius: 15px; /* Mantém as bordas arredondadas */
+    }
+
+    .abelhas_texto h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .abelhas_texto p {
+        font-size: 18px; /* Reduz o tamanho do texto */
+        padding: 20px; /* Ajusta o espaçamento interno */
+    }
+
+    .txtig {
+        font-size: 18px; /* Ajusta o tamanho do texto do Instagram */
+    }
+
+    .bottomimgs {
+        flex-direction: column; /* Empilha as imagens do rodapé */
+        gap: 20px; /* Reduz o espaçamento entre as imagens */
+    }
+
+    footer {
+        flex-direction: column; /* Empilha os itens do rodapé */
+        gap: 20px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .instagram-item {
+        flex-direction: column; /* Empilha o logo e o texto do Instagram */
+        gap: 5px; /* Reduz o espaçamento entre eles */
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #ffa620;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* Responsividade para telas muito pequenas (ex.: celulares menores) */
+@media (max-width: 480px) {
+    .abelhas_texto h1 {
+        font-size: 1.8rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .abelhas_texto p {
+        font-size: 16px; /* Reduz o tamanho do texto */
+    }
+
+    .txtig {
+        font-size: 16px; /* Ajusta o tamanho do texto do Instagram */
+    }
 }

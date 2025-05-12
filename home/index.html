@@ -11,64 +11,68 @@
 </head>
 <body>
     <header class="header">
-            <img src="./img/logo.png" alt="Logo Abelhas Nativas SESI-SENAI" class="logo">
-                <nav>
-                    <ul>
-                     <a href="./index.html">Home</a>
-                     <a href="./sobre.html">Sobre</a>
-                     <a href="./projeto.html">Projeto</a>
-                    </ul>
-                   </nav>
+        <img src="./img/logo.png" alt="Logo Abelhas Nativas SESI-SENAI" class="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./projeto.html">Projeto</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="main">
         <div class="restaura">
             <h1>Restaura Natureza 2025</h1>
             <h2>Projeto Abelhas Nativas SESI-SENAI Caçapava</h2>
-            <img src="./img/apresentação_abelhas (3).jpeg" alt="Imagem do grupo" class="imagem-grupo">
+            <img src="./img/equipe.jpeg" alt="Imagem do grupo" class="imagem-grupo">
         </div>
 
         <div class="equipe">
             <h1>Equipe</h1>
-
             <div class="container">
-                <div class="div1">
-                    <img src="./img/circulo.png" alt="Imagem Orientador" class="membro-imagem">
-                    <p>Orientador: Profº José Roberto</p>
+                <!-- Orientadores -->
+                <div class="grupo-orientadores">
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Orientador:</strong> Profº José Roberto</p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Orientador:</strong> Luis Felipe</p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Orientador:</strong> Lucas</p>
+                    </div>
                 </div>
 
-                <div class="div2">
-                    <img src="./img/circulo.png" alt="Imagem Ana Leixo" class="membro-imagem">
-                    <p>Ana Aleixo</p>
-                </div>
-
-                <div class="div3">
-                    <img src="./img/circulo.png" alt="Imagem Geovanna" class="membro-imagem">
-                    <p>Geovanna Shimada</p>
-                </div>
-
-                <div class="div4">
-                    <img src="./img/circulo.png" alt="Imagem Luiz Felipe" class="membro-imagem">
-                    <p>Luiz Felipe Leite</p>
-                </div>
-
-                <div class="div5">
-                    <img src="./img/circulo.png" alt="Imagem Manuella Catarina" class="membro-imagem">
-                    <p>Manuela Catarina</p>
-                </div>
-
-                <div class="div6">
-                    <img src="./img/circulo.png" alt="Imagem Samuel Mioni" class="membro-imagem">
-                    <p>Samuel Mioni</p>
-                </div>
-
-                <div class="div7">
-                    <img src="./img/circulo.png" alt="Imagem Orientador Luis" class="membro-imagem">
-                    <p>Orientador: Luis</p>
-                </div>
-
-                <div class="div8">
-                    <img src="./img/circulo.png" alt="Imagem Orientador Wesley" class="membro-imagem">
-                    <p>Orientador: Wesley</p>
+                <!-- Outros integrantes -->
+                <div class="grupo-integrantes">
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Ana Aleixo</strong></p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Geovanna Shimada</strong></p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Luiz Felipe Leite</strong></p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Manuela Catarina</strong></p>
+                    </div>
+                    <div class="integrante">
+                        <div class="circle"></div>
+                        <p><strong>Samuel Mioni</strong></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,13 +81,13 @@
             <h2>Temas Abrangidos no Trabalho</h2>
             <div class="container2">
                 <div class="tema1">
-                    <p>Abelhas Sem Ferrão</p>
-                    <img src="./img/circulo.png" alt="Imagem Tema 1" class="membro-imagem">
+                    <p class="txt-temas">Abelhas Sem Ferrão</p>
+                    <img src="./img/2-IMG_001_jpg.png" alt="Imagem Tema 1" class="membro-imagem">
                 </div>
 
                 <div class="tema2">
-                    <p>Biodiversidade</p>
-                    <img src="./img/circulo.png" alt="Imagem Tema 2" class="membro-imagem">
+                    <p class="txt-temas">Biodiversidade</p>
+                    <img src="./img/TEMA_biodiversidade_Adriano-Gambarini-WWF-US-2-405x272.jpeg.png" alt="Imagem Tema 2" class="membro-imagem">
                 </div>
             </div>
         </div>
@@ -113,5 +117,16 @@
             </h2>
         </div>
     </footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
